@@ -121,7 +121,7 @@ li {
 
 .header-nav {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -137,7 +137,7 @@ li {
   justify-self: start;
 
   display: flex;
-  gap: clamp(1rem, 4vw, 2rem);
+  gap: clamp(0.5rem, 4vw, 2rem);
 }
 
 .header-nav-links a {
