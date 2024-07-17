@@ -11,8 +11,8 @@ export default function Header() {
             className="banner-img"
           />
 
-          <div className="containe">
-            <div className="header-contents">
+          <div className="header-contents">
+            <div className="container">
               <nav className="header-nav">
                 <img
                   src="./images/logos/sleepstiq-header.png"
