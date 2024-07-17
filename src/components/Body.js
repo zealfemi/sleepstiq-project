@@ -4,7 +4,7 @@ export default function Body() {
   return (
     <>
       {/* REVIEWS */}
-      <section id="reviews">
+      {/* <section id="reviews">
         <div className="row gap-5 py-3 d-lg-flex align-items-lg-center justify-space-lg-between">
           <div className="col-md d-flex flex-column justify-content-center container">
             <div className="sm-content-container">
@@ -117,10 +117,10 @@ export default function Body() {
 
       <div className="container">
         <div className="divider"></div>
-      </div>
+      </div> */}
 
       {/* SHOP NOW AND OUR MISSION*/}
-      <section>
+      {/* <section>
         <article id="shop-now">
           <div className="row gap-5">
             <div className="col-lg">
@@ -203,7 +203,7 @@ export default function Body() {
 
       <div className="container">
         <div className="divider"></div>
-      </div>
+      </div> */}
     </>
   );
 }
