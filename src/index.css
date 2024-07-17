@@ -210,7 +210,7 @@ li {
 /* REVIEWS */
 
 .review-card-large {
-  max-width: 474px;
+  /* max-width: 474px; */
   height: 100%;
   padding: 35px 25px;
   background: #fbf9f2;
@@ -336,6 +336,9 @@ a.know-more {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    height: 100vh;
+  }
   .simple-carousel-slide {
     flex: 1 0 50%;
   }
@@ -346,6 +349,12 @@ a.know-more {
 }
 
 @media screen and (min-width: 992px) {
+  .large-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .simple-carousel-slide {
     flex: 1 0 30%;
   }

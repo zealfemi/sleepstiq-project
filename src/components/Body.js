@@ -4,37 +4,42 @@ export default function Body() {
   return (
     <>
       {/* REVIEWS */}
-      {/* <section id="reviews">
-        <div className="row gap-5 py-3 d-lg-flex align-items-lg-center justify-space-lg-between">
-          <div className="col-md d-flex flex-column justify-content-center container">
-            <div className="sm-content-container">
-              <p className="small">Our Amazing Story</p>
-              <h2 className="">10k+ Happy Customers</h2>
+      <section id="reviews">
+        <div className="d-flex flex-column flex-lg-row gap-5 py-3 container">
+          <div className="col-md">
+            <div className="d-flex flex-column justify-content-center">
+              <div className="sm-content-container">
+                <p className="small">Our Amazing Story</p>
+                <h2 className="">10k+ Happy Customers</h2>
 
-              <p className="color-low">
-                There's no secret sauce, no wizard behind the curtain. What
-                makes Aerolab tick is an interdisciplinary team with a framework
-                that fosters candid collaboration.
-              </p>
+                <p className="color-low">
+                  There's no secret sauce, no wizard behind the curtain. What
+                  makes Aerolab tick is an interdisciplinary team with a
+                  framework that fosters candid collaboration.
+                </p>
 
-              <a href="./#" className="small know-more">
-                Know more about us
-              </a>
+                <a href="./#" className="small know-more">
+                  Know more about us
+                </a>
+              </div>
             </div>
           </div>
-          <div className="col-md d-flex flex-column justify-content-center container">
-            <div className="sm-content-container review-card-large">
-              <p className="fst-italic text-black review-large-text">
-                I'm a very anxious person but use this and feel so relaxed and
-                sleep way better now with the aid of sleepstiq.
-              </p>
 
-              <div className="review-large-author">
-                <img src="./images/ceo.png" alt="review author" />
+          <div className="col-md ">
+            <div className="d-flex flex-column justify-content-center">
+              <div className="sm-content-container review-card-large">
+                <p className="fst-italic text-black review-large-text">
+                  I'm a very anxious person but use this and feel so relaxed and
+                  sleep way better now with the aid of sleepstiq.
+                </p>
 
-                <div>
-                  <h6>James Miller</h6>
-                  <p className="">CEO, Techbias</p>
+                <div className="review-large-author">
+                  <img src="./images/ceo.png" alt="review author" />
+
+                  <div>
+                    <h6>James Miller</h6>
+                    <p className="">CEO, Techbias</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -117,13 +122,13 @@ export default function Body() {
 
       <div className="container">
         <div className="divider"></div>
-      </div> */}
+      </div>
 
       {/* SHOP NOW AND OUR MISSION*/}
-      {/* <section>
+      <section>
         <article id="shop-now">
-          <div className="row gap-5">
-            <div className="col-lg">
+          <div className="d-flex flex-column flex-lg-row gap-5">
+            <div className="">
               <div className="position-relative">
                 <img
                   src="./images/product-1.png"
@@ -142,7 +147,7 @@ export default function Body() {
               </div>
             </div>
 
-            <div className="col-lg d-flex flex-column justify-content-center container">
+            <div className="d-flex flex-column justify-content-center container">
               <div className="sm-content-container gap-4">
                 <h2>Shop Now</h2>
                 <p className="color-low">
@@ -158,8 +163,8 @@ export default function Body() {
         </article>
 
         <article id="our-mission" className="my-5 py-5">
-          <div className="row gap-5">
-            <div className="col-lg d-flex flex-column justify-content-lg-center container">
+          <div className="d-flex flex-column flex-lg-row gap-5">
+            <div className="d-flex flex-column justify-content-lg-center container">
               <div className="sm-content-container">
                 <h2>Our Mission</h2>
                 <p className="color-low">
@@ -177,7 +182,7 @@ export default function Body() {
                 </ul>
               </div>
             </div>
-            <div className="col-lg">
+            <div className="">
               <img
                 src="./images/woman-lying.png"
                 alt="woman lying"
@@ -203,7 +208,7 @@ export default function Body() {
 
       <div className="container">
         <div className="divider"></div>
-      </div> */}
+      </div>
     </>
   );
 }

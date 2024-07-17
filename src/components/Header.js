@@ -50,7 +50,7 @@ export default function Header() {
             </div>
           </div>
 
-          {/* <div className="header-partners-container">
+          <div className="header-partners-container">
             <div className="header-partners">
               <img
                 src="./images/logos/google.png"
@@ -78,7 +78,7 @@ export default function Header() {
                 alt="partners"
               />
             </div>
-          </div> */}
+          </div>
         </div>
       </header>
     </>
