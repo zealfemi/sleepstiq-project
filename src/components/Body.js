@@ -128,7 +128,7 @@ export default function Body() {
                 <img
                   src="./images/product-1.png"
                   alt="sleepstiq pic"
-                  className="our-mission-img w-100"
+                  className="our-mission-img"
                 />
 
                 <div className="shop-now-img-description">
@@ -181,7 +181,7 @@ export default function Body() {
               <img
                 src="./images/woman-lying.png"
                 alt="woman lying"
-                className="our-mission-img w-100"
+                className="our-mission-img"
               />
             </div>
           </div>
