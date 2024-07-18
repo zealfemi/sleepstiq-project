@@ -140,11 +140,11 @@ li {
   justify-self: start;
 
   display: flex;
-  gap: clamp(0.5rem, 4vw, 2rem);
+  gap: clamp(0.5rem, 3vw, 2rem);
 }
 
 .header-nav-links a {
-  font-size: clamp(14px, 4vw, 18px);
+  font-size: clamp(14px, 3vw, 18px);
 }
 
 /* BANNER */
@@ -226,7 +226,7 @@ a.know-more {
 }
 
 .review-large-text {
-  font-size: clamp(18px, 4vw, 22px);
+  font-size: clamp(18px, 3vw, 22px);
 }
 
 .know-more::before {
