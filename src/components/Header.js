@@ -54,27 +54,27 @@ export default function Header() {
             <div className="header-partners">
               <img
                 src="./images/logos/google.png"
-                className=""
+                className="partner-logo"
                 alt="partners"
               />
               <img
                 src="./images/logos/google.png"
-                className=""
+                className="partner-logo"
                 alt="partners"
               />
               <img
                 src="./images/logos/google.png"
-                className=""
+                className="partner-logo"
                 alt="partners"
               />
               <img
                 src="./images/logos/google.png"
-                className=""
+                className="partner-logo"
                 alt="partners"
               />
               <img
                 src="./images/logos/google.png"
-                className=""
+                className="partner-logo"
                 alt="partners"
               />
             </div>
