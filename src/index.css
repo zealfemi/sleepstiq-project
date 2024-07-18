@@ -312,6 +312,10 @@ a.know-more {
   margin-left: 8vw;
 }
 
+.scroller:last-child {
+  margin-right: 3vw;
+}
+
 /* SOP NOW AND OUR MISSION */
 
 .shop-now-img-description {
