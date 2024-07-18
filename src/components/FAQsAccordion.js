@@ -8,7 +8,7 @@ import {
 import data from "../data/faqs";
 
 export default function FAQsAccordion(props) {
-  const catId = props.categoryId;
+  {/*const catId = props.categoryId;
 
   const accordion = data[catId].map((accordionList) => {
     return (
@@ -17,12 +17,12 @@ export default function FAQsAccordion(props) {
         <AccordionDetails>{accordionList.answer}</AccordionDetails>
       </Accordion>
     );
-  });
+  }); */}
 
   return (
     <>
-      {accordion}
-      {/* <Accordion id="panel1-header" aria-controls="panel1-content">
+    {/*{accordion}*/}
+      <Accordion id="panel1-header" aria-controls="panel1-content">
         <AccordionSummary>HEADER</AccordionSummary>
         <AccordionDetails>ANSWER</AccordionDetails>
       </Accordion>
@@ -33,7 +33,7 @@ export default function FAQsAccordion(props) {
       <Accordion id="panel-header" aria-controls="panel-content">
         <AccordionSummary>HEADER</AccordionSummary>
         <AccordionDetails>ANSWER</AccordionDetails>
-      </Accordion> */}
+      </Accordion>
     </>
   );
 }
