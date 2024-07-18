@@ -49,6 +49,10 @@ body {
   color: var(--color-low);
 }
 
+.active {
+  font-weight: bold;
+}
+
 /* RESET */
 
 h1,
@@ -62,7 +66,11 @@ p {
   padding: 0;
 }
 
-h1,
+h1 {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
 h2,
 h3,
 h4,
@@ -70,10 +78,6 @@ h5,
 h6 {
   font-weight: bolder;
   text-transform: capitalize;
-}
-
-h1 {
-  font-size: 60px;
 }
 
 a:any-link {
@@ -193,6 +197,18 @@ li {
   width: 100%;
   height: clamp(30px, 3vw, 48px);
   object-fit: contain;
+}
+
+.search-form {
+  max-width: 859px;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.search-form input {
+  border: none;
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 750px) {
