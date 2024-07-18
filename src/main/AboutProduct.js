@@ -5,7 +5,13 @@ import ReviewsList from "../components/ReviewsList";
 import DividerLine from "../components/DividerLine";
 import Footer from "../components/Footer";
 
+import data from "../data/products";
+
 export default function AboutProduct() {
+  const product = data.map((product) => {
+    return <ProductDetails key={product.id} {...product} />;
+  });
+
   return (
     <>
       <Header
@@ -16,7 +22,7 @@ export default function AboutProduct() {
         buttonText=""
         showButton={false}
       />
-      <ProductDetails />
+      {product[0]}
       <DividerLine />
       <ReviewsList />
       <Footer />

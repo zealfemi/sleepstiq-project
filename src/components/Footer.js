@@ -1,4 +1,5 @@
 import React from "react";
+import Socials from "./Socials";
 
 export default function Footer() {
   return (
@@ -62,23 +63,7 @@ export default function Footer() {
                       Feel free to get in touch with us via email
                     </p>
                     <p className="fs-4 fw-bold">hello@sleepstiq.com</p>
-                    <ul className="d-flex gap-2">
-                      <li>
-                        <img src="./images/logos/facebook.png" alt="facebook" />
-                      </li>
-                      <li>
-                        <img src="./images/logos/twitter.png" alt="facebook" />
-                      </li>
-                      <li>
-                        <img
-                          src="./images/logos/google-plus.png"
-                          alt="facebook"
-                        />
-                      </li>
-                      <li>
-                        <img src="./images/logos/linkedin.png" alt="facebook" />
-                      </li>
-                    </ul>
+                    <Socials />
                   </div>
                 </div>
 

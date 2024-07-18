@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Partners from "./Partners";
 
 export default function Header(props) {
   const styles = {
@@ -56,37 +57,7 @@ export default function Header(props) {
             </div>
           </div>
 
-          {props.partners && (
-            <div className="header-partners-container">
-              <div className="header-partners">
-                <img
-                  src="./images/logos/google.png"
-                  className="partner-logo"
-                  alt="partners"
-                />
-                <img
-                  src="./images/logos/google.png"
-                  className="partner-logo"
-                  alt="partners"
-                />
-                <img
-                  src="./images/logos/google.png"
-                  className="partner-logo"
-                  alt="partners"
-                />
-                <img
-                  src="./images/logos/google.png"
-                  className="partner-logo"
-                  alt="partners"
-                />
-                <img
-                  src="./images/logos/google.png"
-                  className="partner-logo"
-                  alt="partners"
-                />
-              </div>
-            </div>
-          )}
+          {props.partners && <Partners />}
         </div>
       </header>
     </>

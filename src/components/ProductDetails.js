@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function ProductDetails() {
-  const originalPrice = 25;
+export default function ProductDetails(props) {
+  const originalPrice = props.price;
 
   const [productPrice, setPrice] = React.useState(originalPrice);
+
+  // FUNCTIONS
 
   function changePrice(event) {
     console.log(event.target.value);
@@ -12,13 +14,17 @@ export default function ProductDetails() {
       return originalPrice * event.target.value;
     });
   }
+
+  const detailsList = props.details.map((detail) => {
+    return <li>{detail}</li>;
+  });
   return (
     <>
       <section id="product">
         <div className="w-100 d-flex flex-column flex-lg-row gap-5">
           <div className="col-lg">
             <img
-              src="./images/product-1.png"
+              src={props.img}
               alt="sleepstiq pic"
               className="product-img object-contain w-100"
             />
@@ -26,25 +32,17 @@ export default function ProductDetails() {
 
           <div className="col-lg d-flex flex-column justify-content-center container">
             <div className="sm-content-container gap-4">
-              <h2>Shop Now</h2>
-              <p className="color-low">
-                Our Personal Diffuser is an aromatherapy device that contains a
-                blend of melatonin, lavender, and chamomile. A few breaths of
-                our plant-based essential oil mist will mellow you out, quiet
-                the mind, and lull you to bed.
-              </p>
+              <h2>About Product</h2>
+              <p className="color-low">{props.description}</p>
 
-              <ul>
-                <li>😊 Promotes calm and relaxation.</li>
-                <li>💤 Inhalation allows for a rapid effect.</li>
-                <li>✅ 100% drug-free, plant-based ingredients.</li>
-                <li>⚕️ 3rd-party lab tested.</li>
-              </ul>
+              <ul>{detailsList}</ul>
 
               <div className="row w-lg-50 align-items-center g-2">
                 <div className="col-6">Price</div>
                 <div className="col-6">Unit</div>
-                <div className="col-6 fw-bold">USD {productPrice}</div>
+                <div className="col-6 fw-bold">
+                  {props.currency} {productPrice}
+                </div>
                 <div className="col-6">
                   <input
                     type="number"

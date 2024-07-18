@@ -1,6 +1,14 @@
 import React from "react";
+import data from "../data/products";
+import { Link } from "react-router-dom";
 
 export default function ShopNow() {
+  const product = data[0];
+
+  const details = product.details.map((detail) => {
+    return <li>{detail}</li>;
+  });
+
   return (
     <>
       <section id="shop-now">
@@ -8,18 +16,13 @@ export default function ShopNow() {
           <div className="col-lg">
             <div className="position-relative">
               <img
-                src="./images/product-1.png"
+                src={product.img}
                 alt="sleepstiq pic"
                 className="our-mission-img"
               />
 
               <div className="shop-now-img-description">
-                <ul>
-                  <li>😊 Promotes calm and relaxation.</li>
-                  <li>💤 Inhalation allows for a rapid effect.</li>
-                  <li>✅ 100% drug-free, plant-based ingredients.</li>
-                  <li>⚕️ 3rd-party lab tested.</li>
-                </ul>
+                <ul>{details}</ul>
               </div>
             </div>
           </div>
@@ -27,13 +30,10 @@ export default function ShopNow() {
           <div className="col-lg d-flex flex-column justify-content-center container">
             <div className="sm-content-container gap-4">
               <h2>Shop Now</h2>
-              <p className="color-low">
-                Our Personal Diffuser is an aromatherapy device that contains a
-                blend of melatonin, lavender, and chamomile. A few breaths of
-                our plant-based essential oil mist will mellow you out, quiet
-                the mind, and lull you to bed.
-              </p>
-              <button className="btn">Visit Shop</button>
+              <p className="color-low">{product.description}</p>
+              <Link to="/product">
+                <button className="btn">Visit Shop</button>
+              </Link>
             </div>
           </div>
         </div>
