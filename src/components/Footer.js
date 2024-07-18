@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer id="footer">
-        <div className="footer-container d-flex flex-column align-items-center gap-3">
+        <div className="footer-container d-flex flex-column align-items-center gap-5">
           <img
             src="./images/sleepstiq-big-footer.png"
             alt="sleepstiq pic"
@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="col-6 col-lg-2">
               <p className="fw-bold mb-3">COMPANY</p>
 
-              <ul className="d-flex flex-column gap-2">
+              <ul className="d-flex flex-column gap-2 text-white-50">
                 <li>About</li>
                 <li>Blog</li>
                 <li>Contact</li>
@@ -27,9 +27,9 @@ export default function Footer() {
               <p className="fw-bold mb-3">CONTACT</p>
 
               <ul className="d-flex flex-column gap-2">
-                <li>Phone</li>
+                <li className="text-white-50">Phone</li>
                 <li className="fw-bold">+234 708 507 3128</li>
-                <li>Address</li>
+                <li className="text-white-50">Address</li>
                 <li className="fw-bold">16, Ogindipe Close, Upston Close</li>
               </ul>
             </div>
@@ -52,19 +52,40 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-12 col-lg-3 mb-3">
-              <p className="fw-bold">GET IN TOUCH</p>
+            <div className="col-12 col-lg-3 height-100">
+              <div className="d-flex flex-column justify-content-between">
+                <div>
+                  <p className="fw-bold mb-3">GET IN TOUCH</p>
 
-              <div>
-                <p>Feel free to get in touch with us vai email</p>
-                <p className="fs-4 fw-bold">hello@sleepstiq.com</p>
-                <ul>
-                  <li></li>
-                </ul>
+                  <div className="d-flex flex-column gap-3">
+                    <p className="text-white-50">
+                      Feel free to get in touch with us vai email
+                    </p>
+                    <p className="fs-4 fw-bold">hello@sleepstiq.com</p>
+                    <ul className="d-flex gap-2">
+                      <li>
+                        <img src="./images/logos/facebook.png" alt="facebook" />
+                      </li>
+                      <li>
+                        <img src="./images/logos/twitter.png" alt="facebook" />
+                      </li>
+                      <li>
+                        <img
+                          src="./images/logos/google-plus.png"
+                          alt="facebook"
+                        />
+                      </li>
+                      <li>
+                        <img src="./images/logos/linkedin.png" alt="facebook" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p className="small text-white-50 justify-self-end mt-3">
+                  &copy; 2020@sleepstiq. All Rights Reserved.
+                </p>
               </div>
-              <p className="small">
-                &copy; 2020@sleepstiq. All Rights Reserved.
-              </p>
             </div>
           </div>
         </div>
