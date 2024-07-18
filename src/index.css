@@ -208,7 +208,7 @@ li {
 
 .search-form input {
   border: none;
-  flex-grow: 1;
+  width: 100%;
 }
 
 @media screen and (max-width: 750px) {
