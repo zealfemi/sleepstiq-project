@@ -46,73 +46,67 @@ export default function Body() {
           </div>
         </div>
 
-        <div className="reviews-list"></div>
+        <div className="carousel-container mt-5">
+          <div class="simple-carousel">
+            <div class="simple-carousel-container gap-4" dir="ltr">
+              <div class="simple-carousel-slide review">
+                <p class="fst-italic p-3">
+                  Love it! I have trouble falling asleep and this knocked me
+                  right out. Will be buying more.
+                </p>
 
-        <div className="carousel-container">
-          <div className="reviews-list">
-            <div class="simple-carousel">
-              <div class="simple-carousel-container gap-4" dir="ltr">
-                <div class="simple-carousel-slide review">
-                  <p class="fst-italic">
-                    Love it! I have trouble falling asleep and this knocked me
-                    right out. Will be buying more.
-                  </p>
-
-                  <div className="rating-author">
-                    <h6>John Matthews</h6>
-                    <img
-                      src="./images/logos/rating-5-star-green.png"
-                      alt="rating"
-                      className="rating-stars"
-                    />
-                  </div>
+                <div className="rating-author p-3">
+                  <h6>John Matthews</h6>
+                  <img
+                    src="./images/logos/rating-5-star-green.png"
+                    alt="rating"
+                    className="rating-stars"
+                  />
                 </div>
-                <div class="simple-carousel-slide review">
-                  <p class="fst-italic">
-                    I work shift work. Swinging from days to nights is sometimes
-                    brutal for sleep. Thank you Sleepstiq.I work shift work.
-                    Swinging from days to nights is sometimes brutal for sleep.
-                    Thank you Sleepstiq.
-                  </p>
+              </div>
+              <div class="simple-carousel-slide review">
+                <p class="fst-italic p-3">
+                  I work shift work. Swinging from days to nights is sometimes
+                  brutal for sleep. Thank you Sleepstiq.I work shift work.
+                </p>
 
-                  <div className="rating-author">
-                    <h6>John Matthews</h6>
-                    <img
-                      src="./images/logos/rating-5-star-green.png"
-                      alt="rating"
-                      className="rating-stars"
-                    />
-                  </div>
+                <div className="rating-author p-3 ">
+                  <h6>John Matthews</h6>
+                  <img
+                    src="./images/logos/rating-5-star-green.png"
+                    alt="rating"
+                    className="rating-stars"
+                  />
                 </div>
-                <div class="simple-carousel-slide review">
-                  <p class="fst-italic">
-                    Love it! I have trouble falling asleep and this knocked me
-                    right out. Will be buying more.
-                  </p>
+              </div>
+              <div class="simple-carousel-slide review">
+                <p class="fst-italic p-3">
+                  Love it! I have trouble falling asleep and this knocked me
+                  right out. Will be buying more.
+                </p>
 
-                  <div className="rating-author">
-                    <h6>John Matthews</h6>
-                    <img
-                      src="./images/logos/rating-5-star-green.png"
-                      alt="rating"
-                      className="rating-stars"
-                    />
-                  </div>
+                <div className="rating-author p-3">
+                  <h6>John Matthews</h6>
+                  <img
+                    src="./images/logos/rating-5-star-green.png"
+                    alt="rating"
+                    className="rating-stars"
+                  />
                 </div>
-                <div class="simple-carousel-slide review">
-                  <p class="fst-italic">
-                    Love it! I have trouble falling asleep and this knocked me
-                    right out. Will be buying more.
-                  </p>
+              </div>
+              <div class="simple-carousel-slide review">
+                <p class="fst-italic p-3">
+                  Love it! I have trouble falling asleep and this knocked me
+                  right out. Will be buying more.
+                </p>
 
-                  <div className="rating-author">
-                    <h6>John Matthews</h6>
-                    <img
-                      src="./images/logos/rating-5-star-green.png"
-                      alt="rating"
-                      className="rating-stars"
-                    />
-                  </div>
+                <div className="rating-author p-3">
+                  <h6>John Matthews</h6>
+                  <img
+                    src="./images/logos/rating-5-star-green.png"
+                    alt="rating"
+                    className="rating-stars"
+                  />
                 </div>
               </div>
             </div>
@@ -209,6 +203,95 @@ export default function Body() {
       <div className="container">
         <div className="divider"></div>
       </div>
+
+      <section id="products">
+        <div className="container">
+          <h2 className="">Product Reviews</h2>
+        </div>
+
+        <div className="carousel-container">
+          <div class="simple-carousel">
+            <div class="simple-carousel-container gap-5" dir="ltr">
+              <div class="simple-carousel-slide products-review">
+                <div className="product-details">
+                  <img
+                    src="./images/woman-lying.png"
+                    alt="product"
+                    className="product-image-review"
+                  />
+                  <p class="fst-italic pt-2 px-3">
+                    Love it! I have trouble falling asleep and this knocked me
+                    right out. Will be buying more.
+                  </p>
+                </div>
+
+                <div className="rating-author p-3">
+                  <h6>John Matthews</h6>
+                  <img
+                    src="./images/logos/rating-5-star-green.png"
+                    alt="rating"
+                    className="rating-stars"
+                  />
+                </div>
+              </div>
+              <div class="simple-carousel-slide products-review">
+                <div className="product-details">
+                  <img src="./images/product-2.png" alt="product" />
+                  <p class="fst-italic pt-2 px-3">
+                    Love it! I have trouble falling asleep and this knocked me
+                    right out. Will be buying more.
+                  </p>
+                </div>
+
+                <div className="rating-author p-3">
+                  <h6>John Matthews</h6>
+                  <img
+                    src="./images/logos/rating-5-star-green.png"
+                    alt="rating"
+                    className="rating-stars"
+                  />
+                </div>
+              </div>
+              <div class="simple-carousel-slide products-review">
+                <div className="product-details">
+                  <img src="./images/product-2.png" alt="product" />
+                  <p class="fst-italic pt-2 px-3">
+                    Love it! I have trouble falling asleep and this knocked me
+                    right out. Will be buying more.
+                  </p>
+                </div>
+
+                <div className="rating-author p-3">
+                  <h6>John Matthews</h6>
+                  <img
+                    src="./images/logos/rating-5-star-green.png"
+                    alt="rating"
+                    className="rating-stars"
+                  />
+                </div>
+              </div>
+              <div class="simple-carousel-slide products-review">
+                <div className="product-details">
+                  <img src="./images/product-2.png" alt="product" />
+                  <p class="fst-italic pt-2 px-3">
+                    Love it! I have trouble falling asleep and this knocked me
+                    right out. Will be buying more.
+                  </p>
+                </div>
+
+                <div className="rating-author p-3">
+                  <h6>John Matthews</h6>
+                  <img
+                    src="./images/logos/rating-5-star-green.png"
+                    alt="rating"
+                    className="rating-stars"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
