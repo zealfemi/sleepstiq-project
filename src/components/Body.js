@@ -144,8 +144,8 @@ export default function Body() {
       {/* SHOP NOW AND OUR MISSION*/}
       <section>
         <article id="shop-now">
-          <div className="d-flex flex-column flex-lg-row gap-5">
-            <div className="">
+          <div className="row w-100 d-flex flex-column flex-lg-row gap-5">
+            <div className="col-lg">
               <div className="position-relative">
                 <img
                   src="./images/product-1.png"
@@ -164,7 +164,7 @@ export default function Body() {
               </div>
             </div>
 
-            <div className="d-flex flex-column justify-content-center container">
+            <div className="col-lg d-flex flex-column justify-content-center container">
               <div className="sm-content-container gap-4">
                 <h2>Shop Now</h2>
                 <p className="color-low">
@@ -180,8 +180,8 @@ export default function Body() {
         </article>
 
         <article id="our-mission" className="my-5 py-5">
-          <div className="d-flex flex-column flex-lg-row gap-5">
-            <div className="d-flex flex-column justify-content-lg-center container">
+          <div className="row w-100 d-flex flex-column flex-lg-row gap-5">
+            <div className="col-lg d-flex flex-column justify-content-lg-center container">
               <div className="sm-content-container">
                 <h2>Our Mission</h2>
                 <p className="color-low">
@@ -199,7 +199,7 @@ export default function Body() {
                 </ul>
               </div>
             </div>
-            <div className="">
+            <div className="col-lg">
               <img
                 src="./images/woman-lying.png"
                 alt="woman lying"
@@ -227,14 +227,15 @@ export default function Body() {
         <div className="divider"></div>
       </div>
 
+      {/* PRODUCT REVIEWS */}
       <section id="products">
         <div className="container">
           <h2 className="">Product Reviews</h2>
         </div>
 
         <div class="scroll-list-container my-4">
-          <div class="scroller shadow">
-            <div class="products-review content shadow">
+          <div class="scroller">
+            <div class="products-review slide-content shadow">
               <div className="product-details">
                 <img
                   src="./images/product-2.png"
@@ -257,7 +258,7 @@ export default function Body() {
                 />
               </div>
             </div>
-            <div class="products-review content shadow">
+            <div class="products-review slide-content shadow">
               <div className="product-details">
                 <img
                   src="./images/product-2.png"
@@ -280,7 +281,7 @@ export default function Body() {
                 />
               </div>
             </div>
-            <div class="products-review content shadow">
+            <div class="products-review content">
               <div className="product-details">
                 <img
                   src="./images/product-2.png"
@@ -303,7 +304,7 @@ export default function Body() {
                 />
               </div>
             </div>
-            <div class="products-review content shadow">
+            <div class="products-review slide-content shadow">
               <div className="product-details">
                 <img
                   src="./images/product-2.png"

@@ -1,15 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
+  const styles = {
+    height: "80vh",
+  };
+
+  props.isHome ? (styles.height = "100vh") : (styles.height = "80vh");
+
   return (
     <>
       <header id="header">
-        <div className="header">
-          <img
-            src="./images/banner-home.png"
-            alt="header logo"
-            className="banner-img"
-          />
+        <div className="header" style={styles}>
+          <img src={props.banner} alt="header banner" className="banner-img" />
 
           <div className="header-contents">
             <div className="container">
@@ -22,63 +25,68 @@ export default function Header() {
 
                 <ul className="header-nav-links">
                   <li>
-                    <a href="./#" className="active">
-                      Home
-                    </a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a href="./#">About</a>
+                    <Link to="/product">About</Link>
                   </li>
                   <li>
-                    <a href="./#">Shop</a>
+                    <Link to="/product">Shop</Link>
                   </li>
                   <li>
-                    <a href="./#">FAQs</a>
+                    <Link to="/faqs">FAQs</Link>
                   </li>
                 </ul>
               </nav>
 
               <div className="banner-contents">
-                <p className="banner-top-text">We're here to help you</p>
-                <h1 className="banner-large-text">Relax &amp; Rest</h1>
-                <p className="banner-bottom-text">
-                  With the aid of our Melatonin Sleepstiq, we can assure you
-                  that you can get quality sleep.
-                </p>
+                {props.topText && (
+                  <p className="banner-top-text">{props.topText}</p>
+                )}
+                {props.largeText && (
+                  <h1 className="banner-large-text">{props.largeText}</h1>
+                )}
+                {props.bottomText && (
+                  <p className="banner-bottom-text">{props.bottomText}</p>
+                )}
               </div>
-              <button className="btn">Visit Shop</button>
+              {props.buttonText && (
+                <button className="btn">{props.buttonText}</button>
+              )}
             </div>
           </div>
 
-          <div className="header-partners-container">
-            <div className="header-partners">
-              <img
-                src="./images/logos/google.png"
-                className="partner-logo"
-                alt="partners"
-              />
-              <img
-                src="./images/logos/google.png"
-                className="partner-logo"
-                alt="partners"
-              />
-              <img
-                src="./images/logos/google.png"
-                className="partner-logo"
-                alt="partners"
-              />
-              <img
-                src="./images/logos/google.png"
-                className="partner-logo"
-                alt="partners"
-              />
-              <img
-                src="./images/logos/google.png"
-                className="partner-logo"
-                alt="partners"
-              />
+          {props.partners && (
+            <div className="header-partners-container">
+              <div className="header-partners">
+                <img
+                  src="./images/logos/google.png"
+                  className="partner-logo"
+                  alt="partners"
+                />
+                <img
+                  src="./images/logos/google.png"
+                  className="partner-logo"
+                  alt="partners"
+                />
+                <img
+                  src="./images/logos/google.png"
+                  className="partner-logo"
+                  alt="partners"
+                />
+                <img
+                  src="./images/logos/google.png"
+                  className="partner-logo"
+                  alt="partners"
+                />
+                <img
+                  src="./images/logos/google.png"
+                  className="partner-logo"
+                  alt="partners"
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </header>
     </>

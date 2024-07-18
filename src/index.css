@@ -101,16 +101,18 @@ li {
 
 /* HEADER */
 .header {
-  height: 100vh;
+  height: 80vh;
   position: relative;
 
   margin-bottom: 100px;
+  background-color: #fbf9f2;
 }
 
 .banner-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: left center;
 }
 
 .header-contents {
@@ -251,13 +253,6 @@ a.know-more {
   border-radius: 50%;
 }
 
-.review {
-  max-width: 306px;
-  max-height: 210px;
-  background: #fbf9f2;
-  border-radius: 8px;
-}
-
 .products-review {
   max-width: 306px;
   max-height: 420px;
@@ -278,13 +273,6 @@ a.know-more {
   border-radius: 8px 8px 0 0;
 }
 
-.products-review.content {
-  height: 420px;
-  width: 300px;
-
-  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.145947) !important;
-}
-
 /* SIMPLE CAROUSEL */
 
 .scroll-list-container {
@@ -302,10 +290,15 @@ a.know-more {
   gap: 2rem;
   scroll-snap-align: center;
 }
-.content {
+
+.slide-content {
   min-width: 300px;
   height: 100%;
   float: left;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
 .scroller:first-child {
@@ -314,6 +307,22 @@ a.know-more {
 
 .scroller:last-child {
   margin-right: 3vw;
+}
+
+.review.slide-content {
+  width: 306px;
+  height: 210px;
+  background: #fbf9f2;
+  border-radius: 8px;
+  margin: 2rem 0 3rem 0;
+}
+
+.products-review.slide-content {
+  height: 420px;
+  width: 300px;
+  margin: 2rem 0 5rem 0;
+
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.145947) !important;
 }
 
 /* SOP NOW AND OUR MISSION */
@@ -371,9 +380,6 @@ a.know-more {
   .header {
     height: 100vh;
   }
-  .simple-carousel-slide {
-    flex: 1 0 50%;
-  }
 
   .sm-content-container {
     width: 420px;
@@ -385,7 +391,11 @@ a.know-more {
     width: 80vw;
   }
 
-  .simple-carousel-slide {
-    flex: 1 0 30%;
+  .our-mission-img {
+    height: 550px;
+    width: 100%;
+    flex-grow: 1;
+    /* object-fit: cover;
+    object-position: center center; */
   }
 }

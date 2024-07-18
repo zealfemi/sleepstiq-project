@@ -59,7 +59,7 @@ export default function Footer() {
 
                   <div className="d-flex flex-column gap-3">
                     <p className="text-white-50">
-                      Feel free to get in touch with us vai email
+                      Feel free to get in touch with us via email
                     </p>
                     <p className="fs-4 fw-bold">hello@sleepstiq.com</p>
                     <ul className="d-flex gap-2">
