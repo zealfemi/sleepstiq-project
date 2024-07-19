@@ -9,9 +9,6 @@ export default function Header(props) {
 
   props.isHome ? (styles.height = "100vh") : (styles.height = "80vh");
 
-  // STATE
-  const [isActive, setActive] = React.useState(false);
-
   function boldText(event) {
     console.log(event.target.innerHTML);
   }

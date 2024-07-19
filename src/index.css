@@ -182,20 +182,23 @@ li {
   border-radius: 2px;
 
   right: 0;
+  overflow: scroll;
+}
+
+.header-partners-container::-webkit-scrollbar {
+  display: none;
 }
 
 .header-partners {
-  /* display: flex;
-  gap: 0.5rem; */
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .partner-logo {
   width: 100%;
-  height: clamp(30px, 3vw, 48px);
+  max-height: clamp(30px, 3vw, 40px);
   object-fit: contain;
 }
 
@@ -215,23 +218,7 @@ li {
   .banner-contents {
     margin-top: 100px;
   }
-
-  /* .header-partners {
-    animation: slidePartners 20s linear infinite;
-    overflow: hidden;
-  } */
 }
-
-/* @keyframes slidePartners {
-  0% {
-    transform: translateX(100%);
-    overflow: visible;
-  }
-  100% {
-    transform: translateX(-200%);
-    overflow: visible;
-  }
-} */
 
 /* REVIEWS */
 
@@ -426,7 +413,7 @@ footer {
 
 @media screen and (min-width: 992px) {
   .header-partners-container {
-    width: 80vw;
+    width: 90vw;
   }
 
   .our-mission-img {
