@@ -384,7 +384,7 @@ a.know-more {
 /* FAQs */
 
 .faqs-container {
-  width: 95vw;
+  width: 92vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -406,11 +406,6 @@ a.know-more {
 
 .faq-active {
   font-weight: bold;
-}
-
-.faqs-accordion {
-  border-left: none;
-  border-right: none;
 }
 
 /* FOOTER */
