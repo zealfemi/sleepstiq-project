@@ -174,7 +174,7 @@ li {
   position: absolute;
   width: 100%;
   padding: 50px 20px;
-  bottom: -10%;
+  bottom: -60px;
 
   background: #ffffff;
   box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.145947);
@@ -220,7 +220,7 @@ li {
   }
 
   .partner-logo:last-child {
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
 }
 
