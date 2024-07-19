@@ -2,7 +2,7 @@ import React from "react";
 
 export default [
   {
-    id: "0",
+    id: 0,
     category: "Sleepstiq Products",
     data: [
       {
@@ -56,7 +56,7 @@ export default [
     ],
   },
   {
-    id: "2",
+    id: 1,
     category: "Order",
     data: [
       {
@@ -86,7 +86,7 @@ export default [
     ],
   },
   {
-    id: 3,
+    id: 2,
     category: "Melanconin",
     data: [
       {

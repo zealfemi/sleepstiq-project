@@ -15,7 +15,7 @@ export default function FAQs() {
 
   // STATE FOR CATEGORY
 
-  const [categoryId, setCategoryId] = React.useState(1);
+  const [categoryId, setCategoryId] = React.useState(0);
 
   function changeCategory(event, id) {
     const newCatId = event.target.id;
@@ -35,7 +35,10 @@ export default function FAQs() {
 
       <section className="container">
         <div className="row w-100 g-4">
-          <div className="col-lg-4 d-flex" onClick={changeCategory}>
+          <div
+            className="col-lg-4 d-flex flex-row flex-lg-column gap-3"
+            onClick={changeCategory}
+          >
             {faqsCategories}
           </div>
           <div className="col-lg-8">
