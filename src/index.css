@@ -386,11 +386,15 @@ a.know-more {
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 8px;
+  display: grid;
+  place-content: center;
+  height: 100%;
 }
 
 .faqs-category:hover {
-  background-color: var(--color-low);
-  color: white;
+  /* background-color: var(--color-low);
+  color: white; */
+  font-weight: bold;
 }
 
 /* FOOTER */
@@ -429,7 +433,11 @@ footer {
     height: 550px;
     width: 100%;
     flex-grow: 1;
-    /* object-fit: cover;
-    object-position: center center; */
+  }
+
+  .faqs-category {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

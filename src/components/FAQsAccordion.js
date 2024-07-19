@@ -10,7 +10,7 @@ import data from "../data/faqs";
 export default function FAQsAccordion(props) {
   const catId = props.categoryId;
 
-  const accordion = data[catId].data.map((accordionList) => {
+  const accordion = data[catId].data?.map((accordionList) => {
     return (
       <Accordion
         id="panel1-header"
