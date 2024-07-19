@@ -10,14 +10,7 @@ import data from "../data/faqs";
 export default function FAQsAccordion(props) {
   const catId = props.categoryId;
 
-  const accordion = data[catId].map((accordionList) => {
-    return (
-      <Accordion id="panel1-header" aria-controls="panel1-content">
-        <AccordionSummary>{accordionList.question}</AccordionSummary>
-        <AccordionDetails>{accordionList.answer}</AccordionDetails>
-      </Accordion>
-    );
-  });
+  console.log(data[catId]);
 
   return (
     <>
