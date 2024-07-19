@@ -68,7 +68,7 @@ export default function Footer() {
                 </div>
 
                 <p className="small text-white-50 justify-self-end mt-3">
-                  &copy; 2020@sleepstiq. All Rights Reserved.
+                  &copy; 2020 @sleepstiq. All Rights Reserved.
                 </p>
               </div>
             </div>
