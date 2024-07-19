@@ -142,11 +142,12 @@ li {
 }
 
 .header-nav-links {
+  flex-grow: 1;
   list-style-type: none;
   padding: 0;
-  justify-self: start;
 
   display: flex;
+  justify-content: center;
   gap: clamp(0.5rem, 3vw, 2rem);
 }
 
