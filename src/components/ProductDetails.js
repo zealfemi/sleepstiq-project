@@ -1,17 +1,24 @@
 import React from "react";
 
 export default function ProductDetails(props) {
+  const defaultUnit = 2;
   const originalPrice = props.price;
+  const defaultPrice = originalPrice * defaultUnit;
 
-  const [productPrice, setPrice] = React.useState(originalPrice);
+  const [productPrice, setPrice] = React.useState(defaultPrice);
+  const [unit, setUnit] = React.useState(defaultUnit);
 
   // FUNCTIONS
 
   function changePrice(event) {
-    console.log(event.target.value);
+    const newUnit = event.target.value;
+
+    setUnit((prevUnit) => {
+      return newUnit;
+    });
 
     setPrice((prevPrice) => {
-      return originalPrice * event.target.value;
+      return originalPrice * newUnit;
     });
   }
 
@@ -48,7 +55,7 @@ export default function ProductDetails(props) {
                     type="number"
                     onChange={changePrice}
                     className="w-50 fw-bold px-2 py-1 g-2 rounded border-1"
-                    defaultValue={2}
+                    value={unit}
                     min={1}
                     max={100}
                   />

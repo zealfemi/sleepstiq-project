@@ -5,23 +5,49 @@ import FAQsAccordion from "../components/FAQsAccordion";
 import data from "../data/faqs";
 
 export default function FAQs() {
-  const faqsCategories = data?.map((cat) => {
+  // STATE FOR CATEGORY
+  const [categoryId, setCategoryId] = React.useState(0);
+
+  const newCategories = data?.map((cat) => {
+    return { id: cat.id, category: cat.category, isActive: false };
+  });
+
+  // STATE FOR ACTIVE
+  const [active, setActive] = React.useState(newCategories);
+
+  let faqsCategories = active?.map((cat) => {
     return (
-      <div key={cat.id} id={cat.id} className="faqs-category">
+      <div
+        key={cat.id}
+        id={cat.id}
+        className={cat.isActive ? "faq-active faqs-category" : "faqs-category"}
+        onClick={checkActive}
+      >
         {cat.category}
       </div>
     );
   });
-
-  // STATE FOR CATEGORY
-
-  const [categoryId, setCategoryId] = React.useState(0);
 
   function changeCategory(event, id) {
     const newCatId = event.target.id;
 
     setCategoryId((prevCatId) => {
       return newCatId;
+    });
+  }
+
+  function checkActive(event) {
+    const id = event.target.id;
+    setActive((current) => {
+      const newArr = current?.map((cat) => {
+        if (cat.id == id) {
+          return { ...cat, isActive: true };
+        } else {
+          return { ...cat, isActive: false };
+        }
+      });
+
+      return newArr;
     });
   }
 
