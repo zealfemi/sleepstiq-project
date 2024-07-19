@@ -31,53 +31,56 @@ export default function Header(props) {
           )}
 
           <div className="header-contents">
-            <div className="container">
-              <nav className="header-nav">
-                <img
-                  src="./images/logos/sleepstiq-header.png"
-                  alt="header logo"
-                  className="header-logo"
-                />
+            <div className="container h-100">
+              <div className="header-spread">
+                <nav className="header-nav">
+                  <img
+                    src="./images/logos/sleepstiq-header.png"
+                    alt="header logo"
+                    className="header-logo"
+                  />
 
-                <ul className="header-nav-links" onClick={boldText}>
-                  <NavLink exact activeClassName="active" to="/">
-                    <li>Home</li>
-                  </NavLink>
-                  <NavLink activeClassName="" to="/about">
-                    <li>About</li>
-                  </NavLink>
-                  <NavLink activeClassName="active" to="/shop">
-                    <li>Shop</li>
-                  </NavLink>
-                  <NavLink activeClassName="active" to="/faqs">
-                    <li>FAQs</li>
-                  </NavLink>
-                </ul>
-              </nav>
+                  <ul className="header-nav-links" onClick={boldText}>
+                    <NavLink exact activeClassName="active" to="/">
+                      <li>Home</li>
+                    </NavLink>
+                    <NavLink activeClassName="" to="/about">
+                      <li>About</li>
+                    </NavLink>
+                    <NavLink activeClassName="active" to="/shop">
+                      <li>Shop</li>
+                    </NavLink>
+                    <NavLink activeClassName="active" to="/faqs">
+                      <li>FAQs</li>
+                    </NavLink>
+                  </ul>
+                </nav>
 
-              <div className="banner-contents">
-                {props.topText && (
-                  <p className="banner-top-text">{props.topText}</p>
-                )}
-                {props.largeText && (
-                  <h1 className="banner-large-text">{props.largeText}</h1>
-                )}
-                {props.bottomText && (
-                  <p className="banner-bottom-text">{props.bottomText}</p>
-                )}
+                <div className="banner-contents">
+                  {props.topText && (
+                    <p className="banner-top-text">{props.topText}</p>
+                  )}
+                  {props.largeText && (
+                    <h1 className="banner-large-text">{props.largeText}</h1>
+                  )}
+                  {props.bottomText && (
+                    <p className="banner-bottom-text">{props.bottomText}</p>
+                  )}
+
+                  {props.buttonText && (
+                    <Link to={props.buttonLink}>
+                      <button className="btn">{props.buttonText}</button>
+                    </Link>
+                  )}
+
+                  {props.isFAQs && (
+                    <form className="d-flex gap-3 search-form">
+                      <img src="./images/logos/search.png" alt="search logo" />
+                      <input type="text" placeholder="Search FAQs here" />
+                    </form>
+                  )}
+                </div>
               </div>
-              {props.buttonText && (
-                <Link to={props.buttonLink}>
-                  <button className="btn">{props.buttonText}</button>
-                </Link>
-              )}
-
-              {props.isFAQs && (
-                <form className="d-flex gap-3 search-form">
-                  <img src="./images/logos/search.png" alt="search logo" />
-                  <input type="text" placeholder="Search FAQs here" />
-                </form>
-              )}
             </div>
           </div>
 
