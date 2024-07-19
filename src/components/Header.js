@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Partners from "./Partners";
 
 export default function Header(props) {
@@ -44,7 +44,7 @@ export default function Header(props) {
                   <NavLink activeClassName="" to="/about">
                     <li>About</li>
                   </NavLink>
-                  <NavLink activeClassName="active" to="/product">
+                  <NavLink activeClassName="active" to="/shop">
                     <li>Shop</li>
                   </NavLink>
                   <NavLink activeClassName="active" to="/faqs">
@@ -65,7 +65,9 @@ export default function Header(props) {
                 )}
               </div>
               {props.buttonText && (
-                <button className="btn">{props.buttonText}</button>
+                <Link to={props.buttonLink}>
+                  <button className="btn">{props.buttonText}</button>
+                </Link>
               )}
 
               {props.isFAQs && (

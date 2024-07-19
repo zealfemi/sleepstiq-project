@@ -16,6 +16,7 @@ export default function Home() {
         largeText="Relax & Rest"
         bottomText="With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep."
         buttonText="Visit Shop"
+        buttonLink="shop"
         partners={true}
         isHome={true}
       />
