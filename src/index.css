@@ -174,7 +174,11 @@ li {
   position: absolute;
   width: 100%;
   padding: 50px 20px;
+<<<<<<< HEAD
   bottom: -60px;
+=======
+  bottom: -20px;
+>>>>>>> 553e5c8face268389f22c4792094335ae424f7de
 
   background: #ffffff;
   box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.145947);
@@ -218,10 +222,13 @@ li {
   .banner-contents {
     margin-top: 100px;
   }
+<<<<<<< HEAD
 
   .partner-logo:last-child {
     /* padding-right: 20px; */
   }
+=======
+>>>>>>> 553e5c8face268389f22c4792094335ae424f7de
 }
 
 /* REVIEWS */
