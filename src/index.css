@@ -174,7 +174,7 @@ li {
 .header-partners-container {
   position: absolute;
   width: 100%;
-  padding: 20px;
+  padding: 30px 20px;
   bottom: -6%;
 
   background: #ffffff;
@@ -194,7 +194,7 @@ li {
   justify-content: space-evenly;
   align-items: center;
   gap: 1.5rem;
-  height: clamp(30px, 3vw, 40px);
+  height: 20px;
 }
 
 .partner-logo {
