@@ -4,7 +4,7 @@ export default function Review(props) {
   let newClass = "slide-content";
 
   props.isProduct
-    ? (newClass = "product-review slide-content")
+    ? (newClass = "products-review slide-content")
     : (newClass = "review slide-content");
 
   return (

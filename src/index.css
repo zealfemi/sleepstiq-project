@@ -339,7 +339,7 @@ a.know-more {
   width: 300px;
   margin: 2rem 0 5rem 0;
 
-  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.145947) !important;
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.145947);
 }
 
 /* SOP NOW AND OUR MISSION */
@@ -394,6 +394,10 @@ a.know-more {
 }
 
 /* FOOTER */
+
+footer {
+  margin-top: 80px;
+}
 
 .footer-container {
   padding: 35px 3vw;

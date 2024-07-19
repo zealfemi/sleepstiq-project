@@ -8,8 +8,6 @@ import {
 import data from "../data/faqs";
 
 export default function FAQsAccordion(props) {
-  // console.log(data[props.categoryId].category);
-
   const catId = props.categoryId;
 
   const accordion = data[catId].data.map((accordionList) => {
