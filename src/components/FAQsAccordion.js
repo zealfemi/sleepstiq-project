@@ -8,14 +8,23 @@ import {
 import data from "../data/faqs";
 
 export default function FAQsAccordion(props) {
-  const catId = props.categoryId;
+  {
+    /*const catId = props.categoryId;
 
-  console.log(data[catId]);
+  const accordion = data[catId].map((accordionList) => {
+    return (
+      <Accordion id="panel1-header" aria-controls="panel1-content">
+        <AccordionSummary>{accordionList.question}</AccordionSummary>
+        <AccordionDetails>{accordionList.answer}</AccordionDetails>
+      </Accordion>
+    );
+  }); */
+  }
 
   return (
     <>
-      {accordion}
-      {/* <Accordion id="panel1-header" aria-controls="panel1-content">
+      {/*{accordion}*/}
+      <Accordion id="panel1-header" aria-controls="panel1-content">
         <AccordionSummary>HEADER</AccordionSummary>
         <AccordionDetails>ANSWER</AccordionDetails>
       </Accordion>
@@ -26,7 +35,7 @@ export default function FAQsAccordion(props) {
       <Accordion id="panel-header" aria-controls="panel-content">
         <AccordionSummary>HEADER</AccordionSummary>
         <AccordionDetails>ANSWER</AccordionDetails>
-      </Accordion> */}
+      </Accordion>
     </>
   );
 }
