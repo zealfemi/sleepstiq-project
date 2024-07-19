@@ -61,8 +61,8 @@ export default function FAQs() {
         isFAQs={true}
       />
 
-      <section className="container">
-        <div className="row w-100 g-4">
+      <section className="faqs-container">
+        <div className="row faqs-width g-4">
           <div
             className="col-lg-3 d-flex flex-row flex-lg-column gap-2 align-items-center align-items-lg-start"
             onClick={changeCategory}

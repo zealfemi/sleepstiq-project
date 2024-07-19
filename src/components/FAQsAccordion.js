@@ -23,6 +23,7 @@ export default function FAQsAccordion(props) {
         onChange={(event, isExpanded) =>
           handleChange(isExpanded, accordionList.id)
         }
+        className="faqs-accordion"
       >
         <AccordionSummary
           id={accordionList.id}
