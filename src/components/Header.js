@@ -41,7 +41,7 @@ export default function Header(props) {
                   <NavLink exact activeClassName="active" to="/">
                     <li>Home</li>
                   </NavLink>
-                  <NavLink activeClassName="active" to="/product">
+                  <NavLink activeClassName="" to="/about">
                     <li>About</li>
                   </NavLink>
                   <NavLink activeClassName="active" to="/product">
