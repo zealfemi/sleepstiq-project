@@ -17,7 +17,7 @@ export default function ErrorPage() {
         <h2>Oops! That page cannot be found.</h2>
         <p className="mt-3">
           It looks like nothing was found at this location. Maybe try one of the
-          links in the menu or press back to go to the pressed page.
+          links in the menu or press back to go to the previous page.
         </p>
       </section>
       <Footer />

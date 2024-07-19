@@ -8,7 +8,7 @@ export default function About() {
       <Header
         banner="../images/product-header.png"
         topText="We're here to help you"
-        largeText="Relax & Rest"
+        largeText="About Us"
         bottomText=""
         buttonText=""
         showButton={false}
