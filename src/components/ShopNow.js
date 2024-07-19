@@ -31,7 +31,7 @@ export default function ShopNow() {
             <div className="sm-content-container gap-4">
               <h2>Shop Now</h2>
               <p className="color-low">{product.description}</p>
-              <Link to="/product">
+              <Link to="/shop">
                 <button className="btn">Visit Shop</button>
               </Link>
             </div>

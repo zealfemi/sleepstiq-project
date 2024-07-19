@@ -5,9 +5,14 @@ import Partners from "./Partners";
 export default function Header(props) {
   const styles = {
     height: "80vh",
+    marginBottom: "none",
   };
 
   props.isHome ? (styles.height = "100vh") : (styles.height = "80vh");
+
+  props.isHome
+    ? (styles.marginBottom = "150px")
+    : (styles.marginBottom = "none");
 
   function boldText(event) {
     console.log(event.target.innerHTML);
