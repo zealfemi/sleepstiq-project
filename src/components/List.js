@@ -19,10 +19,7 @@ export default function Review(props) {
                 className="product-image-review"
               />
 
-              <p class="fst-italic pt-2 px-3">
-                Love it! I have trouble falling asleep and this knocked me right
-                out. Will be buying more.
-              </p>
+              <p class="fst-italic pt-3 px-3">{props.reviewText}</p>
             </div>
             <div className="rating-author p-3">
               <h6>{props.reviewAuthor}</h6>

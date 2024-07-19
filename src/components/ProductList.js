@@ -1,9 +1,9 @@
 import React from "react";
 import ProductReviewList from "./List";
-import data from "../data/productReviews";
+import productRevs from "../data/productReviews";
 
 export default function ProductList() {
-  const productReviews = data?.map((review) => {
+  const productReviews = productRevs?.map((review) => {
     return (
       <ProductReviewList
         key={review.id}
