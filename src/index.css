@@ -380,6 +380,19 @@ a.know-more {
   gap: 1.5rem;
 }
 
+/* FAQs */
+
+.faqs-category {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.faqs-category:hover {
+  background-color: var(--color-low);
+  color: white;
+}
+
 /* FOOTER */
 
 .footer-container {

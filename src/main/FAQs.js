@@ -5,10 +5,10 @@ import FAQsAccordion from "../components/FAQsAccordion";
 import data from "../data/faqs";
 
 export default function FAQs() {
-  const faqsCategories = data.map((category) => {
+  const faqsCategories = data?.map((cat) => {
     return (
-      <div key={category.id} id={category.id}>
-        {category.category}
+      <div key={cat.id} id={cat.id} className="faqs-category">
+        {cat.category}
       </div>
     );
   });
@@ -36,12 +36,12 @@ export default function FAQs() {
       <section className="container">
         <div className="row w-100 g-4">
           <div
-            className="col-lg-4 d-flex flex-row flex-lg-column gap-3"
+            className="col-lg-3 d-flex flex-row flex-lg-column gap-2 align-items-center align-items-lg-start"
             onClick={changeCategory}
           >
             {faqsCategories}
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-9">
             <FAQsAccordion key={categoryId} categoryId={categoryId} />
           </div>
         </div>

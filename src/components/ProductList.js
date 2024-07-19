@@ -3,7 +3,7 @@ import ProductReviewList from "./List";
 import data from "../data/productReviews";
 
 export default function ProductList() {
-  const productReviews = data.map((review) => {
+  const productReviews = data?.map((review) => {
     return (
       <ProductReviewList
         key={review.id}
