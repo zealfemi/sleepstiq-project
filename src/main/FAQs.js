@@ -12,6 +12,8 @@ export default function FAQs() {
     return { id: cat.id, category: cat.category, isActive: false };
   });
 
+  newCategories[0].isActive = true;
+
   // STATE FOR ACTIVE
   const [active, setActive] = React.useState(newCategories);
 
