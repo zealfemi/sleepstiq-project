@@ -73,7 +73,6 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p className="text-center">Designed by Mackie</p>
         </div>
       </footer>
     </>
