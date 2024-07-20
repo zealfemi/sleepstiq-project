@@ -12,7 +12,7 @@ export default function Footer() {
             className=""
           />
 
-          <div className="row w-100 g-3">
+          <div className="row w-100 g-5">
             <div className="col-6 col-lg-2">
               <p className="fw-bold mb-3">COMPANY</p>
 
@@ -54,7 +54,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="col-12 col-lg-3 height-100">
+            <div className="col-12 col-lg-3 left-border height-100">
               <div className="d-flex flex-column justify-content-between">
                 <div>
                   <p className="fw-bold mb-3">GET IN TOUCH</p>

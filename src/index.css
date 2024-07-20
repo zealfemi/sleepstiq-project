@@ -483,4 +483,8 @@ footer {
     width: 100%;
     height: auto;
   }
+
+  .left-border {
+    border-left: 1px solid #5d6544;
+  }
 }
