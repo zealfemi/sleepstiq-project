@@ -416,6 +416,10 @@ footer {
   height: 100%;
 }
 
+.terms-service {
+  color: #8fe2ff;
+}
+
 /* SCREEN */
 
 @media screen and (min-width: 650px) {

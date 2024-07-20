@@ -44,11 +44,12 @@ export default function Footer() {
                   treat, cure, or prevent any disease. This product should be
                   used only as directed on the label. All trademarks and
                   copyrights are property of their respective owners and not
-                  affiliated with nor do they endorse this product.
+                  affiliated with nor do they endorse this product. Results may
+                  vary.
                 </li>
                 <li>
-                  Results may vary. By using our website or product, you agree
-                  to follow our terms of service.
+                  By using our website or product, you agree to follow our{" "}
+                  <span className="terms-service">terms of service.</span>
                 </li>
               </ul>
             </div>
