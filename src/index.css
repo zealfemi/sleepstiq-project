@@ -220,6 +220,11 @@ li {
   }
 }
 
+.partner-logo {
+  width: 100%;
+  height: 100%;
+}
+
 .search-form {
   max-width: 859px;
   padding: 1rem;
