@@ -350,15 +350,14 @@ a.know-more {
   box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.145947);
   border-radius: 8px;
   padding: 20px 20px 10px 20px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
 }
 
 .our-mission-img {
-  height: 550px;
+  /* height: 550px; */
   width: 100%;
   object-fit: cover;
   object-position: center center;
@@ -444,6 +443,15 @@ footer {
     height: 550px;
     width: 100%;
     flex-grow: 1;
+  }
+
+  .shop-now-img-description {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
   }
 
   .faqs-category {
