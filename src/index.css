@@ -454,6 +454,10 @@ footer {
     width: 90vw;
   }
 
+  .header-partners {
+    animation: none;
+  }
+
   .our-mission-img {
     height: 550px;
     width: 100%;
