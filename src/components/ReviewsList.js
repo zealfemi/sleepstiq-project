@@ -8,7 +8,7 @@ export default function ReviewsList() {
   });
   return (
     <div class="scroll-list-container mt-5">
-      <div class="scroller">{reviews}</div>
+      <div class="review-scroll scroller">{reviews}</div>
     </div>
   );
 }
