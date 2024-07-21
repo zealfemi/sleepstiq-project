@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function VisitShop() {
   return (
@@ -11,7 +12,9 @@ export default function VisitShop() {
           plant-based essential oil mist will mellow you out, quiet the mind,
           and lull you to bed.
         </p>
-        <button className="btn">Visit Shop</button>
+        <Link to="/shop">
+          <button className="btn">Visit Shop</button>
+        </Link>
       </div>
     </article>
   );
