@@ -49,9 +49,9 @@ export default function Footer() {
 
               <ul className="d-flex flex-column gap-2">
                 <li className="text-white-50">Phone</li>
-                <li className="fw-bold">+234 708 507 3128</li>
+                <li>+234 708 507 3128</li>
                 <li className="text-white-50">Address</li>
-                <li className="fw-bold">16, Ogindipe Close, Upston Close</li>
+                <li>16, Ogindipe Close, Upston Close</li>
               </ul>
             </div>
 
