@@ -1,7 +1,27 @@
 import React from "react";
 import Socials from "./Socials";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const [showButton, setShowButton] = React.useState(false);
+
+  React.useEffect(() => {
+    const showScrollTopButton = () => {
+      window.scrollY > 300 ? setShowButton(true) : setShowButton(false);
+    };
+
+    window.addEventListener("scroll", showScrollTopButton);
+
+    return () => {
+      window.removeEventListener("scroll", showScrollTopButton);
+    };
+  });
+  function scrollTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <>
       <footer id="footer">
@@ -49,7 +69,7 @@ export default function Footer() {
                 </li>
                 <li>
                   By using our website or product, you agree to follow our{" "}
-                  <span className="terms-service">terms of service.</span>
+                  <Link to="#">terms of service.</Link>
                 </li>
               </ul>
             </div>
@@ -75,6 +95,12 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        {showButton && (
+          <button className="back-to-top" onClick={scrollTop}>
+            &#x2191;
+          </button>
+        )}
       </footer>
     </>
   );
