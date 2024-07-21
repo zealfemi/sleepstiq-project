@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Reviews from "../components/Reviews";
 import ShopNow from "../components/ShopNow";
 import OurMission from "../components/OurMission";
+import VisitShop from "../components/VisitShop";
 import ProductReviews from "../components/ProductReviews";
 import DividerLine from "../components/DividerLine";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <DividerLine />
       <ShopNow />
       <OurMission />
+      <VisitShop />
       <DividerLine />
       <ProductReviews />
       <Footer />
