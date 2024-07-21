@@ -250,6 +250,7 @@ li {
 
 a.know-more {
   text-decoration: underline;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
