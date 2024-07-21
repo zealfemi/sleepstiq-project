@@ -7,22 +7,38 @@ export default function Socials() {
       <ul className="d-flex gap-2">
         <li>
           <Link to="#">
-            <img src="./images/logos/facebook.png" alt="facebook" />
+            <img
+              src="./images/logos/facebook.png"
+              className="social-logo"
+              alt="facebook"
+            />
           </Link>
         </li>
         <li>
           <Link to="#">
-            <img src="./images/logos/twitter.png" alt="twitter" />
+            <img
+              src="./images/logos/twitter.png"
+              className="social-logo"
+              alt="twitter"
+            />
           </Link>
         </li>
         <li>
           <Link to="#">
-            <img src="./images/logos/google-plus.png" alt="google plus" />
+            <img
+              src="./images/logos/google-plus.png"
+              className="social-logo"
+              alt="google plus"
+            />
           </Link>
         </li>
         <li>
           <Link to="#">
-            <img src="./images/logos/linkedin.png" alt="linkedin" />
+            <img
+              src="./images/logos/linkedin.png"
+              className="social-logo"
+              alt="linkedin"
+            />
           </Link>
         </li>
       </ul>

@@ -423,6 +423,12 @@ footer {
   color: #8fe2ff;
 }
 
+.social-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
 .back-to-top {
   color: white;
   background-color: var(--primary-color);
