@@ -16,12 +16,14 @@ export default function Footer() {
       window.removeEventListener("scroll", showScrollTopButton);
     };
   });
+
   function scrollTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }
+
   return (
     <>
       <footer id="footer">
